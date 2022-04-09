@@ -8,6 +8,7 @@ def kadane(a,size):
 	for i in range(1,size):
 		cur_max = max(a[i], cur_max + a[i])
 		max_sum = max(max_sum,cur_max)
+		
 		return max_sum
 
 a = [1 , 2, -1, 3, 4, -2]
